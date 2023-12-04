@@ -18,12 +18,8 @@
                             </div>
                             <div class="intro-y col-span-12 sm:col-span-6">
                                 <label class="form-label">Nomor Body</label>
-                                @if ($bis)
-                                    {{-- <input type="hidden" name="bis_id" value="{{ $bis->nobody }}" id="bis_id"> --}}
-                                    <input type="hidden" name="bis_id" value="{{ $nobody }}" id="bis_id">
-                                @else
-                                    <input type="text" name="bis_id" value="{{ $nobody }}" readonly>
-                                @endif
+                                <input type="text" name="bis_id" id="nobooking" class="form-control" value="{{ $nobody }}" readonly>
+
                             </div>
                             <div class="intro-y col-span-12 sm:col-span-6">
                                 <label for="tanggal" class="form-label">Tanggal</label>
@@ -39,7 +35,6 @@
                                         <div class="sm:ml-auto mt-1 sm:mt-0 text-xs text-red-500">{{ $message }}</div>
                                     @enderror
                             </div>
-
 
                             <div class="intro-y col-span-12 sm:col-span-6">
                                 <label for="tujuan" class="form-label">Tujuan</label>

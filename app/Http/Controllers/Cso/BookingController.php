@@ -69,7 +69,7 @@ class BookingController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create($bis_id = null, $nobody = null)
+    public function create($bis_id, $nobody)
     {
         // Ambil data bis untuk dropdown
         $bis = Bis::pluck('nobody', 'id')->toArray();
