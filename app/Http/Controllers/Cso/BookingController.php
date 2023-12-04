@@ -78,7 +78,7 @@ class BookingController extends Controller
         $nobody = isset($bis[$bis_id]) ? $bis[$bis_id] : 'default_value';
 
         // Cetak nilai nobody untuk memeriksanya
-        dd($nobody);
+        // dd($nobody);
 
         // Sisanya dari fungsi create...
         $user = User::all();
